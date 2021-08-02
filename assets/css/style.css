@@ -1,0 +1,666 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+html{
+	font-size: 62.5%
+}
+body{	
+	font-size: 1.6rem;
+	font-family: 'ITC Avant Garde Gothic Std Book Condensed';
+	font-weight: 400;
+
+	/*font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;*/
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li a{
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+/*=============================================================
+================     Start Home Section Section     ===========
+=============================================================*/
+.home_section{
+	height: calc(100vh - 95px);
+	background: #D9D7D3;
+}
+.home_content{
+	display: none !important;
+}
+/*=============================================================
+=================     End Home Section Section     ============
+=============================================================*/
+
+/*=============================================================
+================        Start Footer Section        ===========
+=============================================================*/
+.main_footer {
+	padding-bottom: 27px;
+	background: #D9D7D3;
+}
+.footer_left{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+.footer_left_left{
+	margin-right: 31px;
+}
+.footer_left_middle{
+	margin-right: 50px;
+}
+.footer_left_left img{
+	width: 133px;
+	height: auto;
+	margin-bottom: 9px;
+}
+.footer_left_left p,
+.footer_left_middle p,
+.footer_left_right p,
+.footer_right p{
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFF;
+}
+.footer_left_middle p:last-child{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+}
+.footer_left_right p a,
+.footer_right p a{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+}
+.main_footer_content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+/*=============================================================
+================       End Footer Section           ===========
+=============================================================*/
+
+/*=============================================================
+================       Start Project Section        ===========
+=============================================================*/
+.projects_page_header{
+	display: none;
+}
+.projects_content4{
+	display: none;
+}
+.projects_page{
+	height: auto;
+}
+.projects_content{
+	text-align: right;
+	padding-top: 100px;
+}
+.projects_content1 h1,
+.projects_content2 h1,
+.projects_content3 h1,
+.projects_content4 h1{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-size: 135px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 108px;
+	letter-spacing: 0em;
+	text-align: right;
+	color: #1D1C1B;
+	max-width: 700px;
+	width: 100%;
+	margin-left: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+.projects_content3 h1:hover,
+.projects_content1 h1:hover,
+.projects_content2 h1:hover,
+.projects_content4 h1:hover{
+	color: rgba(29, 28, 27, 0.1);
+	-webkit-text-stroke: 1px #000;
+}
+.projects_content3 h1:hover::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 2px;
+	color: #000;
+	background: #000;
+	top: 17px;
+	right: -113px;
+}
+.projects_content3 h1:hover::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 326%;
+	color: #000;
+	background: #000;
+	top: -606px;
+	right: 195px;
+}
+
+.projects_content2 h1:hover::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 2px;
+	color: #000;
+	background: #000;
+	top: 102px;
+	right: -113px;
+}
+.projects_content2 h1:hover::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 484%;
+	color: #000;
+	background: #000;
+	top: -350px;
+	right: 478px;
+}
+
+.projects_content1 h1:hover::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 2px;
+	color: #000;
+	background: #000;
+	top: 185px;
+	right: -113px;
+}
+.projects_content1 h1:hover::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 598%;
+	color: #000;
+	background: #000;
+	top: -350px;
+	right: 383px;
+}
+
+
+.project_h1_pos_rel,
+.project_h1_pos_rel2,
+.project_h1_pos_rel3{
+	position: relative;
+}
+.project_h1_pos_rel:hover .projects_content1_hover{
+	visibility: visible;
+}
+.project_h1_pos_rel2:hover .projects_content2_hover{
+	visibility: visible;
+}
+.project_h1_pos_rel3:hover .projects_content3_hover{
+	visibility: visible;
+}
+.projects_content1_hover {
+	position: absolute;
+	top: -14px;
+	right: 197px;
+	visibility: hidden;
+}
+.projects_content2_hover {
+	position: absolute;
+	top: -98px;
+	right: 288px;
+	visibility: hidden;
+}
+.projects_content3_hover {
+	position: absolute;
+	top: -172px;
+	right: 5px;
+	visibility: hidden;
+}
+.projects_content1_hover a img,
+.projects_content2_hover a img,
+.projects_content3_hover a img{
+	width: 191px;
+	height: auto;
+}
+
+.projects_footer_respon{
+	display: none;
+}
+/*=============================================================
+================       End Project Section          ===========
+=============================================================*/
+
+/*=============================================================
+================       Start capabilitie Section       ========
+=============================================================*/
+.capabilities_contents{
+	max-width: 899px;
+	margin: auto;
+	padding: 320px 0px 180px 0px;
+}
+.capabilities_contents_left{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.capabilities_contents_left_right h4,
+.capabilities_contents_left_right p{
+	text-align: right !important;
+}
+.capabilities_contents_right{
+	margin-top: 35px;
+}
+.capabilities_page{
+	background: #454441;
+}
+.capabilities_footer{
+	background: #454441;
+}
+.capabilities_contents_left_left h4{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+.capabilities_contents_left_left p{
+	font-size: 16px;
+	font-style: normal;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #FFF;
+}
+.header_content.project3_header_content.capabilities_header_content1 {
+	display: none;
+}
+.capabilities_header_left a i,
+.capabilities_header_left p,
+.capabilities_header_left p a{
+	color: #000 !important;
+}
+
+.capabilities_footer_left_left p,
+.capabilities_footer_left_left p a,
+.capabilities_footer_left_left p:last-child{
+	color: #000;
+}
+/*=============================================================
+================       End capabilitie Section         ========
+=============================================================*/
+
+/*=============================================================
+================       Start Header Section            ========
+=============================================================*/
+.main_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 40px;
+}
+.capabilities_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 40px;
+}
+.capabilities_header_content{
+	text-align: right;
+}
+.header_content a img{
+	width: 38px;
+	height: auto;
+}
+.header_left a i{
+	font-size: 20px;
+	color: #FFF;
+	display: none;
+}
+.footer_left_left a i {
+	font-size: 20px;
+	color: #FFF;
+	display: none;
+}
+.header_content h1{
+	font-size: 50px;
+	font-family: 'ITC Avant Garde Gothic Std';
+	-webkit-text-stroke: 1px #000;
+	font-weight: 700;
+	color: transparent;
+}
+/*=============================================================
+================       End Header Section              ========
+=============================================================*/
+
+/*=============================================================
+================       Start Legal Section             ========
+=============================================================*/
+.legal_page{
+	height: 100vh;
+	 overflow-x: hidden;
+}
+.main_footer.capabilities_footer.legal_footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+}
+.legal_content_header{
+	text-align: right;
+}
+.legal_content{
+	max-width: 496px;
+	margin: auto;
+	padding: 150px 0px 100px 0px;
+}
+.legal_content h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.legal_content h5:first-child{
+	margin-bottom: 15px;
+}
+.legal_content p{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #FFF;
+}
+.legal_privacy p{
+	font-size: 25px;
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke: 1px #000;
+}
+.legal_privacy a h1{
+	font-size: 50px;
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	color: #1D1C1B;
+	margin-bottom: 100px;
+}
+.legal_privacy{
+	text-align: right;
+}
+
+
+.pricacy_content h1{
+	color: transparent;
+	-webkit-text-stroke: 1px #000;
+}
+.pricacy_content_header{
+	text-align: right;
+}
+/*=============================================================
+================       End Legal Section               ========
+=============================================================*/
+
+/*=============================================================
+================       Start Project3 Section          ========
+=============================================================*/
+.project3_page{
+	background: #2D2D2D;
+}
+.project3_footer{
+	background: #2D2D2D;
+}
+.header_right h1{
+	color: transparent;
+	-webkit-text-stroke: 1px #FFF;
+}
+.project3_header_content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+.header_left_main{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.header_left{
+	margin-right: 33px;
+}
+.header_left a img {
+	width: 133px;
+	height: auto;
+}
+.project3_header_right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+.project3_header{
+	text-align: left;
+}
+.footer_left_right p a,
+.footer_right p a{
+	margin-left: 7px;
+}
+.project3_content,
+.project2_content{
+	text-align: center;
+}
+.project3_content img{
+	width: 647px;
+	height: auto;
+}
+.project3_content,
+.project2_content {
+	padding: 175px 0px 60px 0px;
+}
+/*=============================================================
+================       End Project3 Section            ========
+=============================================================*/
+
+/*=============================================================
+================       Start Project2 Section          ========
+=============================================================*/
+.project2_page{
+	background: #F3DCDE;
+}
+.project2_footer{
+	background: #F3DCDE;
+}
+.project2_left_right p,
+.project2_left_right p a{
+	color: #000;
+}
+.project2_header_right h1{
+	color: transparent;
+	-webkit-text-stroke: 1px #000;
+}
+.project2_content img{
+	width: 979px;
+	height: auto;
+}
+.project2_footer_left_left p,
+.project2_footer_left_left p a{
+	color: #000;
+}
+.project2_footer_left_left p:last-child{
+	color: #000;
+}
+/*=============================================================
+================       End Project2 Section            ========
+=============================================================*/
+
+/*=============================================================
+================       Start Project1 Section          ========
+=============================================================*/
+.project1_page{
+	background: #F7F7F7;
+}
+.project1_content img{
+	width: 871px;
+	height: auto;
+}
+.project1_footer{
+	background: #F7F7F7;
+}
+.project1_content {
+	padding: 80px 0px 0px 0px;
+}
+.main_footer.project2_footer.project1_footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+}
+
+/*//////////// Start Description Css*/
+.project1_content_main {
+	background: #E5E5E5;
+	padding-top: 150px;
+}
+.project1_content_flex_left p{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 22px;
+}
+.project1_content_flex_middle p{
+	font-size: 16px;
+}
+.project1_content_flex_right h5{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 16px;
+}
+.project1_content_flex_right p{
+	font-size: 16px;
+}
+.project1_content_flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 70px;
+}
+.project1_description_all{
+	max-width: 1000px;
+	margin: auto;
+}
+.project1_content_flex_left {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 39%;
+	        flex: 0 0 39%;
+}
+.project1_content_flex_middle {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 36%;
+	        flex: 0 0 36%;
+}
+.project1_content_flex_right {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 22%;
+	        flex: 0 0 22%;
+}
+.project1_content_flex_right p{
+	margin-bottom: 30px;
+}
+.project1_content_flex_right_pbn{
+	margin-bottom: 0px !important;
+}
+
+.project1_content_single_img1 img {
+	width: 750px;
+	height: auto;
+}
+.project1_content_single_img1{
+	margin-bottom: 20px;
+}
+.project1_img_content_main_flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.project1_img_content_flex {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 22%;
+	        flex: 0 0 22%;
+}
+
+.project1_content_down_content{
+	margin-bottom: 100px;
+	text-align: right;
+}
+.project1_content_down_content p{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 25px;
+	color: transparent;
+	-webkit-text-stroke: 1px #000;
+}
+.project1_content_down_content h1{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 50px;
+	color: #1D1C1B;
+}
+/*=============================================================
+================       End Project1 Section            ========
+=============================================================*/
