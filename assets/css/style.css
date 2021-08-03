@@ -7,11 +7,14 @@
 
 html{
 	font-size: 62.5%
+	overflow-x: hidden !important;
 }
 body{	
+	font-size: 16px;	
 	font-size: 1.6rem;
 	font-family: 'ITC Avant Garde Gothic Std Book Condensed';
 	font-weight: 400;
+	overflow: hidden;
 
 	/*font-family: 'ITC Avant Garde Gothic Std';
 	font-weight: 700;*/
@@ -34,8 +37,11 @@ a{
 /*=============================================================
 ================     Start Home Section Section     ===========
 =============================================================*/
+.header_content.project3_header_content.home_content {
+	margin-top: 20px;
+}
 .home_section{
-	height: calc(100vh - 95px);
+	height: 100vh;
 	background: #D9D7D3;
 }
 .home_content{
@@ -50,7 +56,11 @@ a{
 =============================================================*/
 .main_footer {
 	padding-bottom: 27px;
-	background: #D9D7D3;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
 }
 .footer_left{
 	display: -webkit-box;
@@ -79,12 +89,12 @@ a{
 	line-height: 19px;
 	color: #FFF;
 }
-.footer_left_middle p:last-child{
+.footer_left_middle a{
 	font-family: 'ITC Avant Garde Gothic Std';
 	font-weight: 700;
 	font-size: 16px;
 	font-weight: 700;
-	color: #FFF;
+	color: #000;
 }
 .footer_left_right p a,
 .footer_right p a{
@@ -112,35 +122,40 @@ a{
 /*=============================================================
 ================       Start Project Section        ===========
 =============================================================*/
+.main_footer.capabilities_footer.projects_fo_design {
+	background: transparent;
+}
+.projects_fo_des_clr p,
+.projects_fo_des_clr p a,
+.projects_fo_des_clr p:last-child{
+	color: #FFF !important;
+}
 .projects_page_header{
 	display: none;
 }
 .projects_content4{
 	display: none;
 }
-.projects_page{
-	height: auto;
+.projects_page {
+	height: 100vh;
 }
 .projects_content{
 	text-align: right;
 	padding-top: 100px;
 }
-.projects_content1 h1,
-.projects_content2 h1,
-.projects_content3 h1,
-.projects_content4 h1{
+.projects_content1 h1, .projects_content2 h1, .projects_content3 h1, .projects_content4 h1 {
 	font-family: 'ITC Avant Garde Gothic Std';
-	font-size: 135px;
+	font-size: 70px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 108px;
+	line-height: 56px;
 	letter-spacing: 0em;
 	text-align: right;
 	color: #1D1C1B;
-	max-width: 700px;
+	max-width: 382px;
 	width: 100%;
 	margin-left: auto;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	position: relative;
 }
 .projects_content3 h1:hover,
@@ -150,7 +165,7 @@ a{
 	color: rgba(29, 28, 27, 0.1);
 	-webkit-text-stroke: 1px #000;
 }
-.projects_content3 h1:hover::after {
+/*.projects_content3 h1:hover::after {
 	content: "";
 	position: absolute;
 	width: 200%;
@@ -211,7 +226,7 @@ a{
 	background: #000;
 	top: -350px;
 	right: 383px;
-}
+}*/
 
 
 .project_h1_pos_rel,
@@ -231,25 +246,23 @@ a{
 .projects_content1_hover {
 	position: absolute;
 	top: -14px;
-	right: 197px;
+	right: 102px;
 	visibility: hidden;
 }
 .projects_content2_hover {
 	position: absolute;
-	top: -98px;
-	right: 288px;
+	top: -49px;
+	right: 150px;
 	visibility: hidden;
 }
 .projects_content3_hover {
 	position: absolute;
-	top: -172px;
-	right: 5px;
+	top: -93px;
+	right: 0;
 	visibility: hidden;
 }
-.projects_content1_hover a img,
-.projects_content2_hover a img,
-.projects_content3_hover a img{
-	width: 191px;
+.projects_content1_hover a img, .projects_content2_hover a img, .projects_content3_hover a img {
+	width: 100px;
 	height: auto;
 }
 
@@ -263,10 +276,11 @@ a{
 /*=============================================================
 ================       Start capabilitie Section       ========
 =============================================================*/
-.capabilities_contents{
+.capabilities_contents {
 	max-width: 899px;
 	margin: auto;
-	padding: 320px 0px 180px 0px;
+	padding: 105px 0px 20px 0px;
+	width: 100%;
 }
 .capabilities_contents_left{
 	display: -webkit-box;
@@ -329,19 +343,21 @@ a{
 /*=============================================================
 ================       Start Header Section            ========
 =============================================================*/
-.main_header{
+.main_header {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding-top: 40px;
+	background: #454441;
 }
-.capabilities_header{
-	position: absolute;
+.capabilities_header {
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding-top: 40px;
+	background: #454441;
 }
 .capabilities_header_content{
 	text-align: right;
@@ -351,7 +367,7 @@ a{
 	height: auto;
 }
 .header_left a i{
-	font-size: 20px;
+	font-size: 30px;
 	color: #FFF;
 	display: none;
 }
@@ -378,12 +394,15 @@ a{
 	height: 100vh;
 	 overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .main_footer.capabilities_footer.legal_footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: transparent;
+	background: #454441;
 }
 .legal_content_header{
 	text-align: right;
@@ -417,12 +436,13 @@ a{
 	color: transparent;
 	-webkit-text-stroke: 1px #000;
 }
-.legal_privacy a h1{
+.legal_privacy a{
 	font-size: 50px;
 	font-family: 'ITC Avant Garde Gothic Std';
 	font-weight: 700;
 	color: #1D1C1B;
 	margin-bottom: 100px;
+	display: inline-block;
 }
 .legal_privacy{
 	text-align: right;
@@ -443,6 +463,10 @@ a{
 /*=============================================================
 ================       Start Project3 Section          ========
 =============================================================*/
+.main_header.project3_header {
+	position: fixed;
+	background: #2D2D2D;
+}
 .project3_page{
 	background: #2D2D2D;
 }
@@ -499,13 +523,16 @@ a{
 .project2_content{
 	text-align: center;
 }
-.project3_content img{
-	width: 647px;
+.project3_content img {
+	width: 340px;
 	height: auto;
 }
 .project3_content,
 .project2_content {
 	padding: 175px 0px 60px 0px;
+}
+.project2_content {
+	padding: 124px 0 30px 0;
 }
 /*=============================================================
 ================       End Project3 Section            ========
@@ -514,6 +541,10 @@ a{
 /*=============================================================
 ================       Start Project2 Section          ========
 =============================================================*/
+.main_header.project3_header.project2_header {
+	position: fixed;
+	background: transparent;
+}
 .project2_page{
 	background: #F3DCDE;
 }
@@ -528,9 +559,10 @@ a{
 	color: transparent;
 	-webkit-text-stroke: 1px #000;
 }
-.project2_content img{
-	width: 979px;
+.project2_content img {
+	max-width: 625px;
 	height: auto;
+	width: 100%;
 }
 .project2_footer_left_left p,
 .project2_footer_left_left p a{
@@ -546,6 +578,10 @@ a{
 /*=============================================================
 ================       Start Project1 Section          ========
 =============================================================*/
+.main_header.project3_header.project2_header.project1_header {
+	position: fixed;
+	background: #F7F7F7;
+}
 .project1_page{
 	background: #F7F7F7;
 }
@@ -564,9 +600,8 @@ a{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: transparent;
+	background: #E5E5E5;
 }
-
 /*//////////// Start Description Css*/
 .project1_content_main {
 	background: #E5E5E5;
@@ -661,6 +696,29 @@ a{
 	font-size: 50px;
 	color: #1D1C1B;
 }
+.project1_content_down_content a{
+	font-family: 'ITC Avant Garde Gothic Std';
+	font-weight: 700;
+	font-size: 50px;
+	color: #1D1C1B;
+}
+
+.projects_footer{
+	display: none;
+}
+
+.video_main_area video{
+	width: 100vw;
+	height: 100vh;
+	display: block;
+}
+.project_footer_txt a{
+	color: #FFF !important;
+}
+.pro_txt_data p {
+	margin-bottom: -9px;
+}
+
 /*=============================================================
 ================       End Project1 Section            ========
 =============================================================*/
