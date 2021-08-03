@@ -61,6 +61,7 @@ a{
 	left: 0;
 	width: 100%;
 	background: transparent;
+	z-index: 99;
 }
 .footer_left{
 	display: -webkit-box;
@@ -143,7 +144,8 @@ a{
 	text-align: right;
 	padding-top: 100px;
 }
-.projects_content1 h1, .projects_content2 h1, .projects_content3 h1, .projects_content4 h1 {
+.projects_content1 > a, .projects_content2 > a, 
+.projects_content3 > a, .projects_content4 > a {
 	font-family: 'ITC Avant Garde Gothic Std';
 	font-size: 70px;
 	font-style: normal;
@@ -157,77 +159,15 @@ a{
 	margin-left: auto;
 	margin-bottom: 20px;
 	position: relative;
+	display: inline-block;
 }
-.projects_content3 h1:hover,
-.projects_content1 h1:hover,
-.projects_content2 h1:hover,
-.projects_content4 h1:hover{
+.projects_content3 a:hover,
+.projects_content1 a:hover,
+.projects_content2 a:hover,
+.projects_content4 a:hover{
 	color: rgba(29, 28, 27, 0.1);
 	-webkit-text-stroke: 1px #000;
 }
-/*.projects_content3 h1:hover::after {
-	content: "";
-	position: absolute;
-	width: 200%;
-	height: 2px;
-	color: #000;
-	background: #000;
-	top: 17px;
-	right: -113px;
-}
-.projects_content3 h1:hover::before {
-	content: "";
-	position: absolute;
-	width: 2px;
-	height: 326%;
-	color: #000;
-	background: #000;
-	top: -606px;
-	right: 195px;
-}
-
-.projects_content2 h1:hover::after {
-	content: "";
-	position: absolute;
-	width: 200%;
-	height: 2px;
-	color: #000;
-	background: #000;
-	top: 102px;
-	right: -113px;
-}
-.projects_content2 h1:hover::before {
-	content: "";
-	position: absolute;
-	width: 2px;
-	height: 484%;
-	color: #000;
-	background: #000;
-	top: -350px;
-	right: 478px;
-}
-
-.projects_content1 h1:hover::after {
-	content: "";
-	position: absolute;
-	width: 200%;
-	height: 2px;
-	color: #000;
-	background: #000;
-	top: 185px;
-	right: -113px;
-}
-.projects_content1 h1:hover::before {
-	content: "";
-	position: absolute;
-	width: 2px;
-	height: 598%;
-	color: #000;
-	background: #000;
-	top: -350px;
-	right: 383px;
-}*/
-
 
 .project_h1_pos_rel,
 .project_h1_pos_rel2,
@@ -261,7 +201,9 @@ a{
 	right: 0;
 	visibility: hidden;
 }
-.projects_content1_hover a img, .projects_content2_hover a img, .projects_content3_hover a img {
+.projects_content1_hover img,
+.projects_content2_hover img, 
+.projects_content3_hover img {
 	width: 100px;
 	height: auto;
 }
@@ -358,6 +300,7 @@ a{
 	width: 100%;
 	padding-top: 40px;
 	background: #454441;
+	z-index: 99;
 }
 .capabilities_header_content{
 	text-align: right;
@@ -464,8 +407,9 @@ a{
 ================       Start Project3 Section          ========
 =============================================================*/
 .main_header.project3_header {
-	position: fixed;
-	background: #2D2D2D;
+    position: fixed;
+    background: #2D2D2D;
+    z-index: 99;
 }
 .project3_page{
 	background: #2D2D2D;
@@ -544,6 +488,7 @@ a{
 .main_header.project3_header.project2_header {
 	position: fixed;
 	background: transparent;
+	z-index: 99;
 }
 .project2_page{
 	background: #F3DCDE;
@@ -581,9 +526,14 @@ a{
 .main_header.project3_header.project2_header.project1_header {
 	position: fixed;
 	background: #F7F7F7;
+	z-index: 99;
 }
-.project1_page{
+.project1_page {
 	background: #F7F7F7;
+	overflow-y: scroll;
+}
+.footer_left_middle p {
+	line-height: 0px;
 }
 .project1_content img{
 	width: 871px;
@@ -601,6 +551,7 @@ a{
 	left: 0;
 	width: 100%;
 	background: #E5E5E5;
+	z-index: 99;
 }
 /*//////////// Start Description Css*/
 .project1_content_main {
