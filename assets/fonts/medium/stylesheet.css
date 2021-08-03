@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic';
+    src: url('AvantGarde-Bold.eot');
+    src: url('AvantGarde-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AvantGarde-Bold.woff2') format('woff2'),
+        url('AvantGarde-Bold.woff') format('woff'),
+        url('AvantGarde-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic';
+    src: url('AvantGarde-Medium.eot');
+    src: url('AvantGarde-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AvantGarde-Medium.woff2') format('woff2'),
+        url('AvantGarde-Medium.woff') format('woff'),
+        url('AvantGarde-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
